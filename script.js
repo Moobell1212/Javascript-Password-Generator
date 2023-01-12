@@ -91,25 +91,34 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  var length = prompt('How long would you like your password to be? (between 8 and 128)?')
-  var speCha = confirm('Would you like ot use Special Characters (e.g.$@%&*)?')
-  var numCha = confirm('Would you like ot use Numberic Characters (e.g. 1, 2, 3)?')
-  var lowCaseCha = confirm('Would you like ot use Lowercase Characters?')
-  var uppCaseCha = confirm('Would you like ot use Uppercase Characters?')
+  var passwordLength = prompt('How long would you like your password to be? (between 8 and 128)?');
+  var speCha = confirm('Would you like ot use Special Characters (e.g.$@%&*)?');
+  var numCha = confirm('Would you like ot use Numberic Characters (e.g. 1, 2, 3)?');
+  var lowCaseCha = confirm('Would you like ot use Lowercase Characters?');
+  var uppCaseCha = confirm('Would you like ot use Uppercase Characters?');
 }
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var passwordOptions = [];
   var randomSpecialCharacters = Math.floor(specialCharacters*length*Math.random());
+  passwordOptions.push(randomSpecialCharacters);
   var randomNumericCharacters = Math.floor(numericCharacters*length*Math.random());
+  passwordOptions.push(randomNumericCharacters);
   var randomLowerCasedCharacters = Math.floor(lowerCasedCharacters*length*Math.random());
+  passwordOptions.push(randomLowerCasedCharacters);
   var randomUpperCasedCharacters = Math.floor(upperCasedCharacters*length*Math.random());
-
+  passwordOptions.push(randomUpperCasedCharacters);
 }
 
 // Function to generate password with user input
-function generatePassword() {
-
+function generatePassword(passwordLength, ) {
+  let password = "";
+  for (let i = 0; i < passwordLength; i++) {
+    
+    password += Math.floor(passwordOptions*length*Math.random())
+    getRandom(arr);
+  }
 }
 
 // Get references to the #generate element
