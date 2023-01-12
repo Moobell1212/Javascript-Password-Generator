@@ -88,9 +88,14 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  var length = prompt('How long would you like your password to be? (between 8 and 128)?')
+  var speCha = confirm('Would you like ot use Special Characters (e.g.$@%&*)?')
+  var numCha = confirm('Would you like ot use Numberic Characters (e.g. 1, 2, 3)?')
+  var lowCaseCha = confirm('Would you like ot use Lowercase Characters?')
+  var uppCaseCha = confirm('Would you like ot use Uppercase Characters?')
 }
 
 // Function for getting a random element from an array
