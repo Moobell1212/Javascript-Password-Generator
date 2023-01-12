@@ -90,29 +90,40 @@ var upperCasedCharacters = [
 
 
 
-// var passwordLength = prompt('How long would you like your password to be? (between 8 and 128)?');
-// var speCha = confirm('Would you like to use Special Characters (e.g.$@%&*)?');
-// var numCha = confirm('Would you like to use Numberic Characters (e.g. 1, 2, 3)?');
-// var lowCaseCha = confirm('Would you like to use Lowercase Characters?');
-// var uppCaseCha = confirm('Would you like to use Uppercase Characters?');
+var passwordLength = prompt('How long would you like your password to be? (between 8 and 128)?');
+var speCha = confirm('Would you like to use Special Characters (e.g.$@%&*)?');
+var numCha = confirm('Would you like to use Numberic Characters (e.g. 1, 2, 3)?');
+var lowCaseCha = confirm('Would you like to use Lowercase Characters?');
+var uppCaseCha = confirm('Would you like to use Uppercase Characters?');
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var passwordOptions = [];
+  
+  if (speCha === true) {
+  var specialCharactersIndex = Math.floor(specialCharacters.length*Math.random());
+  var randomSpecialCharacters = specialCharacters[specialCharactersIndex];
+  passwordOptions.push(randomSpecialCharacters);
+  };
 
-  var randomSpecialCharacters = Math.floor(specialCharacters.length*Math.random());
- 
+  if (numCha === true){
   var numericCharactersIndex = Math.floor(numericCharacters.length*Math.random());
-  var randomNumericCharacters = specialCharacters[numericCharactersIndex];
+  passwordOptions.push(numericCharactersIndex);
+  };
  
-
+  if (lowCaseCha === true){
   var lowerCasedCharactersIndex = Math.floor(lowerCasedCharacters.length*Math.random());
   var randomLowerCasedCharacters = lowerCasedCharacters[lowerCasedCharactersIndex];
-
+  passwordOptions.push(randomLowerCasedCharacters);};
+  
+  if (uppCaseCha === true){
   var upperCasedCharactersIndex = Math.floor(upperCasedCharacters.length*Math.random());
   var randomUpperCasedCharactersIndex = upperCasedCharacters[upperCasedCharactersIndex];
+  passwordOptions.push(randomUpperCasedCharactersIndex);};
 
-  console.log(randomSpecialCharacters + randomNumericCharacters + randomLowerCasedCharacters + randomUpperCasedCharactersIndex)
+  console.log(passwordOptions);
 }
+
 getRandom();
 
 // // Function to generate password with user input
