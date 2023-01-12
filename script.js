@@ -127,14 +127,15 @@ function getRandom() {
 }
 
 // Function to generate password with user input
+let password = [];
 function generatePassword() {
-  let password = "";
   for (let i = 0; i < passwordLength; i++) {
     getRandom();
     var newPasswordInputIndex = Math.floor(passwordOptions.length*Math.random());
     var newPasswordInput = passwordOptions[newPasswordInputIndex];
     password.push(newPasswordInput);
   }
+  console.log(password);
 }
 
 // Get references to the #generate element
