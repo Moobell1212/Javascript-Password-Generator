@@ -100,6 +100,10 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var randomSpecialCharacters = Math.floor(specialCharacters*length*Math.random());
+  var randomNumericCharacters = Math.floor(numericCharacters*length*Math.random());
+  var randomLowerCasedCharacters = Math.floor(lowerCasedCharacters*length*Math.random());
+  var randomUpperCasedCharacters = Math.floor(upperCasedCharacters*length*Math.random());
 
 }
 
