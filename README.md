@@ -17,32 +17,31 @@ The webiste will then create a random password every time it is run.
 
 When the user clicks the "Generate Password" button (below), prompts will run to request the users choices (as shown below).
 
-<img src="./images/mainpage.png">
-
+<img src="./Images/mainpage.png">
 
 Firstly, the length of password required.
 
-<img src="./images/lengthprompt.png">
+<img src="./Images/lengthprompt.png">
 
 Then if special characters should be used.
 
-<img src="./images/specialcharactersprompt.png">
+<img src="./Images/specialcharactersprompt.png">
 
 Then if numeric characters should be used.
 
-<img src="./images/numericcharactersprompt.png">
+<img src="./Images/numericcharactersprompt.png">
 
 Then if lowercase characters should be used.
 
-<img src="./images/lowercasecharactersprompt.png">
+<img src="./Images/lowercasecharactersprompt.png">
 
 Lastly, if uppercase characters should be used.
 
-<img src="./images/uppercasecharactersprompt.png">
+<img src="./Images/uppercasecharactersprompt.png">
 
 The generated password will be written on the page in the password box. 
 
-<img src="./images/passwordgenerated.png">
+<img src="./Images/passwordgenerated.png">
 
 # License
 
