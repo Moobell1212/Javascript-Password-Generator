@@ -98,7 +98,7 @@ if (passwordLength < 10 || passwordLength > 64 || passwordLength === null){
   while (passwordLength < 10 || passwordLength > 64 || passwordLength === null){
   alert("The password length must be between 10 and 64 inclusive.");
   passwordLength = prompt('How long would you like your password to be? (between 10 and 64)?');}
-}
+};
 speCha = confirm('Would you like to use Special Characters (e.g.$@%&*)?');
 numCha = confirm('Would you like to use Numberic Characters (e.g. 1, 2, 3)?');
 lowCaseCha = confirm('Would you like to use Lowercase Characters?');
@@ -145,7 +145,7 @@ function getRandom() {
   // choosing a random option from the iterationchoises from this loop (loop created in the generatePassword function)
   var randomGeneratedIndex = Math.floor(interationchoices.length*Math.random());
   var randomGeneratedChoice = interationchoices[randomGeneratedIndex];
-  randomGeneratedPassword.push(randomGeneratedChoice)
+  randomGeneratedPassword.push(randomGeneratedChoice);
 
   // consolelog to check that the above code is working
   // console.log(randomGeneratedPassword);
@@ -166,7 +166,7 @@ var generateBtn = document.querySelector('#generate');
 
 // Function to write out the password in string form then input into the password section on the webpage
 function writePassword() {
-  getPasswordOptions()
+  getPasswordOptions();
   generatePassword();
   var passwordText = document.querySelector('#password');
 
