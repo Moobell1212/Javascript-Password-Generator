@@ -24,4 +24,6 @@ When the user clicks the "Generate Password" button (picture 1), prompts will ru
 
 
 
+
+
 The generated password will be written on the page in the password box. 
