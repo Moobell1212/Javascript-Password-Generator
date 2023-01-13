@@ -94,6 +94,11 @@ var passwordLength = 0;
 // function to get options once "Generate Password" is clicked
 function getPasswordOptions() {
 passwordLength = prompt('How long would you like your password to be? (between 10 and 64)?');
+if (passwordLength < 10 || passwordLength > 64 || passwordLength === null){
+  while (passwordLength < 10 || passwordLength > 64 || passwordLength === null){
+  alert("The password length must be between 10 and 64 inclusive.");
+  passwordLength = prompt('How long would you like your password to be? (between 10 and 64)?');}
+}
 speCha = confirm('Would you like to use Special Characters (e.g.$@%&*)?');
 numCha = confirm('Would you like to use Numberic Characters (e.g. 1, 2, 3)?');
 lowCaseCha = confirm('Would you like to use Lowercase Characters?');
