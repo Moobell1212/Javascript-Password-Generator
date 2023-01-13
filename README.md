@@ -43,6 +43,8 @@ The generated password will be written on the page in the password box.
 
 <img src="./Images/passwordgenerated.png">
 
+Deployed site: https://moobell1212.github.io/Javascript-Password-Generator/
+
 # License
 
 MIT
